@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		SOS turismo
+	</title>
+	<script src="js/jquery.js"></script>
+	<link rel="stylesheet" href="css/main.css" type="text/css">
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css" type="text/css">
+	<script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+	<a href="/" class="btn btn-info btn-block" role="button">Home</a>
+	<div class="container">
+		<div class="page-header">
+			<h1>Chat grupal <small> <a href="/">ProteinLab</a></small></h1>
+		</div>
+		<div class="input-group" style="width:300px;text-align:center;margin:0 auto;" id="nickWrap">
+			<input id="nickname" class="form-control input-lg" type="text" placeholder="Ingrese su nickname">
+			<span class="input-group-btn">
+        <button class="btn btn-lg btn-primary" type="submit" id="setNick">OK</button>
+      </span>
+		</div>
+		<div class="alert fade in alert-danger alert-dismissable" data-dismiss="alert" id="login-error" style="display:none;">
+			<button type="button" class="close" id="closeAlert">×</button> este nickname esta en uso, intente nuevamente.
+		</div>
+		<div id="contentWrap" class="row" style="height: 70%;">
+			<div id="chatWrap" class="col-12 col-sm-12 col-md-6 col-lg-8">
+				<div class="panel panel-success">
+					<div class="panel-heading">Chat</div>
+					<div id="chat" class="panel-body"></div>
+				</div>
+				<div>
+					<form id="send-message" class="input-group" style="text-align:center;margin:0 auto;">
+						<input id="message" class="form-control input-lg" type="text">
+						<span class="input-group-btn">
+              <button class="btn btn-lg btn-primary" type="submit">Enviar</button>
+            </span>
+					</form>
+				</div>
+			</div>
+			<div class="col-12 col-sm-8 col-md-4 col-lg-2">
+				<div class="panel panel-info">
+					<div class="panel-heading" style="max-height: 10%;">
+						Usuarios
+					</div>
+					<div id="users" class="panel-body" style="max-height: 40%;"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="js/chat.js"></script>
+</body>
+</html>
