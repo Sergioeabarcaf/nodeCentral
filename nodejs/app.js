@@ -62,7 +62,7 @@ app.get('/', function(req, res) {
 	res.sendFile(__dirname + '/views/index.html');
 });
 app.get('/chat', function(req, res) {
-	res.redirect('/views/chat');
+	res.sendFile(__dirname + '/views/chat.html');
 });
 
 //Abre conexion con socket
