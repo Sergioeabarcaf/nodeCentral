@@ -51,6 +51,70 @@ client.on('message', function(topic, message) {
 		}
 	})
 
+	//Condicional para ejecutar la funcion correspondiente a cada dashboard
+	if(topic=="temperatura"){
+		io.sockets.emit('new temperatura', {
+			value: String(splitMessage[1])
+		});
+		console.log("Emitio el mensaje a new temperatura");
+	}
+
+	if(topic=="humedad"){
+		io.sockets.emit('new humedad', {
+			value: String(splitMessage[1])
+		});
+		console.log("Emitio el mensaje a new humedad");
+	}
+
+	if(topic=="presion"){
+		io.sockets.emit('new presion', {
+			value: String(splitMessage[1])
+		});
+		console.log("Emitio el mensaje a new presion");
+	}
+
+	if(topic=="puntoRocio"){
+		io.sockets.emit('new puntoRocio', {
+			value: String(splitMessage[1])
+		});
+		console.log("Emitio el mensaje a new puntoRocio");
+	}
+
+	if(topic=="viend_ins_grado"){
+		io.sockets.emit('new viend_ins_grado', {
+			value: String(splitMessage[1])
+		});
+		console.log("Emitio el mensaje a new viend_ins_grado");
+	}
+
+	if(topic=="vel_2m"){
+		io.sockets.emit('new vel_2m', {
+			value: String(splitMessage[1])
+		});
+		console.log("Emitio el mensaje a new vel_2m");
+	}
+
+	if(topic=="lluvia_1h"){
+		io.sockets.emit('new lluvia_1h', {
+			value: String(splitMessage[1])
+		});
+		console.log("Emitio el mensaje a new lluvia_1h");
+	}
+
+	if(topic=="uv"){
+		io.sockets.emit('new uv', {
+			value: String(splitMessage[1])
+		});
+		console.log("Emitio el mensaje a new uv");
+	}
+
+	if(topic=="lummens"){
+		io.sockets.emit('new lummens', {
+			value: String(splitMessage[1])
+		});
+		console.log("Emitio el mensaje a new lummens");
+	}
+
 });
 
 //Puerto donde corre el sistema
@@ -63,6 +127,12 @@ app.get('/', function(req, res) {
 });
 app.get('/chat', function(req, res) {
 	res.sendFile(__dirname + '/views/chat.html');
+});
+app.get('/dashboard', function(req, res) {
+	res.sendFile(__dirname + '/views/dashboard.html');
+});
+app.get('/alert', function(req, res) {
+	res.sendFile(__dirname + '/views/alert.html');
 });
 
 //Abre conexion con socket
