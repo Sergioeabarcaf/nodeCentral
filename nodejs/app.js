@@ -4,8 +4,10 @@ var express = require('express'),
 	io = require("socket.io").listen(server),
 	nicknames = {},
 	mqtt = require('mqtt'),
-	client = mqtt.connect({host:'192.168.252.250',host:1883}),
-	clientAlert = mqtt.connect({host:'192.168.150.2', host:1883})
+	//client = mqtt.connect({host:'192.168.252.250',host:1883}),
+	//clientAlert = mqtt.connect({host:'192.168.150.2', host:1883})
+	client = mqtt.connect({host:'192.168.1.134',host:1883}),
+	clientAlert = mqtt.connect({host:'192.168.1.134', host:1883})
 	Sensor = require("./models/sensor").Sensor,
 	document = require("min-document");
 
@@ -119,7 +121,7 @@ client.on('message', function(topic, message) {
 });
 
 //Puerto donde corre el sistema
-server.listen(80);
+server.listen(8080);
 
 //Ruteo a las paginas
 app.use(express.static(__dirname + '/public'));
