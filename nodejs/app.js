@@ -4,7 +4,8 @@ var express = require('express'),
 	io = require("socket.io").listen(server),
 	nicknames = {},
 	mqtt = require('mqtt'),
-	client = mqtt.connect('mqtt://192.168.252.250:1883'),
+	client = mqtt.connect({host:'192.168.252.250',host:1883}),
+	clientAlert = mqtt.connect({host:'192.168.150.2', host:1883})
 	Sensor = require("./models/sensor").Sensor,
 	document = require("min-document");
 
@@ -167,4 +168,9 @@ io.sockets.on('connection', function(socket) {
 		io.sockets.emit('usernames', nicknames);
 	}
 
+	//Funciones cambiar alerta
+	socket.on('sendAlert', function(data){
+		clientAlert.publish('alerta',data.value);
+		console.log("se envio el dato por mqtt: " + data.value);
+	})
 });
