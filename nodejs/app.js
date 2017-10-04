@@ -172,7 +172,8 @@ io.sockets.on('connection', function(socket) {
 
 	//Funciones cambiar alerta
 	socket.on('sendAlert', function(data){
-		clientAlert.publish('alerta',data.value);
+		var mensaje = "totem1/" + data.value;
+		clientAlert.publish('alerta',mensaje);
 		console.log("se envio el dato por mqtt: " + data.value);
 	})
 });
