@@ -9,5 +9,5 @@ f.close()
 time.sleep(10)
 # Ejecucion del servidor nodejs, Cambiar el valor de "pi"
 # ubicado en la siguiente ruta, por el usuario de su computadora
-os.system('sudo node /home/pi/totem/nodejs/app.js &')
+os.system('sudo node /home/pi/nodeCentral/app.js &')
 sys.exit()
