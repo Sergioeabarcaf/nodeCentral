@@ -1,0 +1,30 @@
+{
+  "name": "turismo",
+  "description": "Controlador en nodejs que permite:  -mostrar la pagina web  -tomar datos de los sensores -cargar los datos a la DB -sistema de chat",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "nodejs app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sergioeabarcaf/turismo.git"
+  },
+  "author": "sergioeabarcaf",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sergioeabarcaf/turismo/issues"
+  },
+  "homepage": "https://github.com/Sergioeabarcaf/turismo#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "bootstrap": "^3.3.7",
+    "canvas-gauges": "^2.1.4",
+    "express": "^4.15.3",
+    "jade": "^1.11.0",
+    "min-document": "^2.19.0",
+    "mongoose": "^4.11.3",
+    "mqtt": "^2.13.0",
+    "socket.io": "^2.0.3"
+  }
+}
