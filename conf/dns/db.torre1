@@ -1,0 +1,23 @@
+;
+; BIND data file for torre1.proteinlab.org
+;
+$TTL	604800
+@	IN	SOA	dns.torre1.proteinlab.org. info.torre1.proteinlab.org. (
+			      1		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;
+	IN	NS	dns.torre1.proteinlab.org.
+	IN	NS	dns2.torre1.proteinlab.org.
+	IN	MX  10  mail.torre1.proteinlab.org.
+
+dns	IN	A	192.168.251.3
+dns2	IN	A	192.168.150.2
+mail	IN	A	192.168.150.2
+
+ftp	IN	A	192.168.150.2
+imap	IN	CNAME	ftp
+www	IN	CNAME	ftp
+
