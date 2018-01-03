@@ -1,0 +1,21 @@
+[connection]
+id=Turismo capa 2
+uuid=75834e48-057a-4f7a-bbb2-60a48de4a1eb
+type=ethernet
+permissions=
+secondaries=
+
+[ethernet]
+duplex=full
+mac-address-blacklist=
+
+[ipv4]
+address1=192.168.251.250/24,192.168.251.1
+dns-search=
+method=manual
+
+[ipv6]
+addr-gen-mode=stable-privacy
+dns-search=
+ip6-privacy=0
+method=auto

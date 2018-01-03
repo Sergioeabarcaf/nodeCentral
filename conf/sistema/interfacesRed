@@ -1,0 +1,5 @@
+Pegar las interfaces con SUDO en la siguiente direccion
+
+/etc/NetworkManager/system-connections/
+
+
