@@ -5,7 +5,7 @@ var express = require('express'),
 	nicknames = {},
 	mqtt = require('mqtt'),
 	client = mqtt.connect({host:'192.168.252.250',port:1883}),
-	clientAlert = mqtt.connect({host:'192.168.251.20', port:1883})
+	clientAlert = mqtt.connect({host:'192.168.251.3', port:1883})
 	Sensor = require("./models/sensor").Sensor,
 	document = require("min-document");
 
