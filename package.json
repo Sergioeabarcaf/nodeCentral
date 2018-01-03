@@ -19,9 +19,7 @@
   "dependencies": {
     "body-parser": "^1.17.2",
     "bootstrap": "^3.3.7",
-    "canvas-gauges": "^2.1.4",
     "express": "^4.15.3",
-    "jade": "^1.11.0",
     "min-document": "^2.19.0",
     "mongoose": "^4.11.3",
     "mqtt": "^2.13.0",
