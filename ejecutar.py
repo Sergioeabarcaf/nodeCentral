@@ -6,8 +6,10 @@ import sys
 f=open('timelog.txt','a')
 f.write(time.strftime("%c") + "\n")
 f.close()
-time.sleep(10)
 # Ejecucion del servidor nodejs, Cambiar el valor de "pi"
 # ubicado en la siguiente ruta, por el usuario de su computadora
-os.system('nohup sudo node /home/turismo/nodeCentral/app.js &')
+while (True):
+    date = time.strftime("%Y%m%d%T")
+    os.system("mosquitto_pub -h 192.168.251.3 -t time -m "+date)
+    time.sleep(10)
 sys.exit()
