@@ -1,5 +1,5 @@
-Pegar las interfaces con SUDO en la siguiente direccion
+Ejecutar las siguientes instrucciones para copiar las configuraciones de interfaces de red
 
-/etc/NetworkManager/system-connections/
-
+sudo cp Turismo\ capa\ 1 /etc/NetworkManager/system-connections/
+sudo cp Turismo\ capa\ 2 /etc/NetworkManager/system-connections/
 
