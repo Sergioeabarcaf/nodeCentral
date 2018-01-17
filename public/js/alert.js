@@ -6,6 +6,5 @@ function updateAlerta(mensaje){
     value:mensaje
   });
   console.log("se envia mensaje de alerta");
-
-  document.getElementById('mensajeEnviado').inneHTML="Mensaje enviado con exito";
+  document.getElementById("mensajeEnviado").innerHTML = "Alerta enviada con exito";
 };
