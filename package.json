@@ -17,11 +17,11 @@
   },
   "homepage": "https://github.com/Sergioeabarcaf/turismo#readme",
   "dependencies": {
-    "body-parser": "^1.17.2",
-    "express": "^4.15.3",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
     "min-document": "^2.19.0",
-    "mongoose": "^4.11.3",
-    "mqtt": "^2.13.0",
-    "socket.io": "^2.0.3"
+    "mongoose": "^5.2.5",
+    "mqtt": "^2.18.3",
+    "socket.io": "^2.1.1"
   }
 }
