@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo Ejecutando nodejs
+cd /home/turismo/nodeCentral
+sudo /home/turismo/.nvm/versions/node/v8.11.3/bin/node app.js &
