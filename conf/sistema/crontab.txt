@@ -1,6 +1,0 @@
-# m h  dom mon dow   command
-
-@reboot sudo /home/turismo/.nvm/versions/node/v6.11.4/bin/node /home/turismo/nodeCentral/app.js
-@reboot python /home/turismo/nodeCentral/ejecutar.py
-
-

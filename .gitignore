@@ -1,3 +1,4 @@
 node_modules/
 timelog.txt
 package-lock.json
+*.DS_Store
