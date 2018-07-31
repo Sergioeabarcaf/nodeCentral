@@ -15,3 +15,19 @@ Este proyecto esta desarrollado con NodeJS y utiliza:
 Esta version del sistema esta probada en la experiencia realizada en Rio Clarillo el 25 de enero de 2018.
 
 * Falta pasar a produccion.
+
+## V0.9.1
+Esta versión contiene los siguientes cambios
+
+* Reorganizacion de archivos
+* Creacion de BASH para que levante el el servicio al inicio del sistema
+* Se actualizan las dependencias de NodeJS a las ultimas versiones
+* Archivo para configuracion de servidor NTP
+
+Consideraciones:
+* NodeJS 8.11.3
+* MongoDB V:2.6.10
+* Mosquitto 1.4.8
+* Instalar servidor NTP y Bind9
+
+Versión estable funcionando desde el 30/Julio/2018 en Proteinlab
